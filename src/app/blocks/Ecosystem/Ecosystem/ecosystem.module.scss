@@ -62,55 +62,43 @@
     
     &:nth-child(1) {
       .ecosystem__column-text {
-        border-left: 3px solid $billing;
+			background-color: rgba(246, 231, 228, 1);
+			z-index: -1;
+      //   border-left: 3px solid $billing;
+		  
         a,span {
+			opacity: 1;
           color: $billing;
-          transition: all 0.5s ease;
-          &:hover {
-            color: darken($billing, 10%);
-				opacity: 1;
-          }
-			 
+			 line-height: 1.2;
         }
-		  span{
-			opacity: 0.6;
-		  }
       }
     }
     
     &:nth-child(2) {
       .ecosystem__column-text {
-        border-left: 3px solid $crm;
-        
+      //   border-left: 3px solid $crm;
+		background-color:rgba(239, 227, 249, 1);
+		z-index: -1;
         a,span {
-          color: $crm;
-          transition: all 0.5s ease;
-          &:hover {
-            color: darken($crm, 10%);
 			opacity: 1;
-          }
+          color: $crm;
+			 line-height: 1.2;
+			
         }
-		  span{
-			opacity: 0.6;
-		  }
       }
     }
     
     &:nth-child(3) {
       .ecosystem__column-text {
-        border-left: 3px solid $kvartplataBlue;
-        
+      //   border-left: 3px solid $kvartplataBlue;
+		background-color:rgba(224, 247, 236, 0.5);
+		z-index: -1;
         a,span {
           color: $kvartplataBlue;
-			transition: all 0.5s ease;
-          &:hover {
-            color: darken($kvartplataBlue, 10%);
 			opacity: 1;
-          }
+			line-height: 1.2;
+			
         }
-		  span{
-			opacity: 0.6;
-		  }
       }
     }
   }
@@ -169,7 +157,6 @@
   }
 
   &__column-text {
-    font-size: 20px;
     display: flex;
     flex-direction: column;
     gap: 18px;
@@ -178,7 +165,7 @@
     padding: 20px;
     background-color: rgba(241, 245, 249, 0.5);
     border-radius: 8px;
-    min-height: 120px;
+    height: 200px;
     margin-top: auto;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
     transition: all 0.3s ease;
@@ -193,36 +180,15 @@
     span {
       @include onestFont($onestH7);
       line-height: 120%;
-      font-size: 24px;
+      font-size: 28px;
     }
     
     a {
-      text-decoration: none;
       font-weight: 500;
       transition: all 0.3s ease;
       position: relative;
-      padding-right: 18px;
-      
-      &:after {
-        content: '→';
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 14px;
-        opacity: 0;
-        transition: opacity 0.3s ease, transform 0.3s ease;
-      }
-      
-      &:hover {
-        text-decoration: underline;
-        padding-right: 22px;
-        
-        &:after {
-          opacity: 1;
-          transform: translateY(-50%) translateX(4px);
-        }
-      }
+      text-decoration: underline;
+      padding-right: 22px;
     }
   }
 
@@ -254,7 +220,7 @@
   &__graph-title {
     @include onestFont($onestH7);
     line-height: 20px;
-    color: $electricBlue70;
+    color: rgba(137, 137, 149, 1);
 
     &-billing-sm {
       display: none;
@@ -307,7 +273,6 @@
 
   &__footer-text {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     gap: 30px;
     
@@ -319,7 +284,7 @@
       color: white;
       font-weight: 500;
       text-decoration: none;
-      padding: 18px 120px;
+      padding: 14px 120px;
       border-radius: 50px;
       min-width: 250px;
       white-space: nowrap;
@@ -337,6 +302,7 @@
       line-height: 22px;
       font-size: 18px;
 		font-weight: 400;
+		max-width: 680px;
     }
   }
 }
@@ -393,6 +359,12 @@
     &__kv-graph {
       width: 296px;
       height: 217px;
+    }
+
+    &__column-text {
+      span {
+        font-size: 24px;
+      }
     }
   }
 }
@@ -474,10 +446,10 @@
 
     &__column-text {
       padding: 15px;
-      min-height: 100px;
+      height: 220px;
       
       span {
-        font-size: 14px;
+        font-size: 24px;
         line-height: 20px;
       }
       
@@ -562,10 +534,10 @@
 
     &__column-text {
       padding: 15px;
-      min-height: 90px;
+      height: 230px;
       
       span {
-        font-size: 13px;
+        font-size: 22px;
         line-height: 18px;
       }
     }
@@ -576,7 +548,7 @@
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 900px) {
   .ecosystem {
     max-width: 728px;
     gap: 40px;
@@ -606,7 +578,7 @@
       padding: 0;
       display: grid;
       grid-template-columns: auto 271px;
-      grid-template-rows: 30px auto auto;
+      grid-template-rows: 30px auto auto auto;
 
       &:last-of-type {
         border: unset;
@@ -671,16 +643,26 @@
 
     &__column-text {
       margin-top: 20px;
+      height: 160px;
+      grid-column: 1 / span 2;
+      grid-row:  4;
+		height: auto;
+      span {
+        font-size: 24px;
+      }
       
       &__column-text-billings, &__column-text-crm, &__column-text-kvartplata {
         font-size: 14px;
       }
     }
-
+    &__footer-container {
+		padding: 0;
+    }
     &__footer-text {
-      flex-direction: column-reverse;
+		padding: 0;
+      flex-direction: row;
       align-items: center;
-      text-align: center;
+      text-align: start;
       
       a {
         width: 100%;
@@ -688,8 +670,8 @@
       }
       
       span {
-        text-align: center;
-        max-width: 600px;
+        text-align: start;
+        max-width: 100%;
       }
     }
   }
@@ -817,10 +799,11 @@
     &__column-text {
       padding: 15px 12px;
       margin-top: 15px;
+      height: 150px;
       
       span {
-        font-size: 12px;
-        line-height: 16px;
+        font-size: 18px;
+        line-height: 24px;
       }
       
       a {
@@ -829,8 +812,7 @@
       }
       
       &__column-text-billings, &__column-text-crm, &__column-text-kvartplata {
-        font-size: 12px;
-        line-height: 1.2;
+        font-size: 14px;
       }
     }
   }
@@ -841,10 +823,11 @@
     &__column-text {
       padding: 15px 12px;
       margin-top: 15px;
+      height: 150px;
       
       span {
-        font-size: 12px;
-        line-height: 16px;
+        font-size: 18px;
+        line-height: 24px;
       }
       
       a {
@@ -869,9 +852,11 @@
 
     &__footer-container {
       padding: 20px 15px;
+		margin-top: 0px;
     }
     
     &__footer-text {
+		flex-direction: column;
       a {
         width: 100%;
         max-width: 100%;
@@ -975,7 +960,12 @@
     &__column-text {
       padding: 12px 10px;
       gap: 12px;
-      min-height: auto;
+      height: 140px;
+      
+      span {
+        font-size: 16px;
+        line-height: 22px;
+      }
       
       a {
         font-size: 12px;
@@ -999,6 +989,28 @@
       a {
         width: 100%;
         min-width: unset;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1279px) and (min-width: 901px) {
+  .ecosystem {
+    max-width: 1080px;
+    padding: 0 20px;
+    margin: 0 auto;
+    
+    &__bottom-container {
+      gap: 15px;
+    }
+    
+    &__column-text {
+      height: 180px;
+      padding: 15px;
+      
+      span {
+        font-size: 19px;
+        line-height: 1.2;
       }
     }
   }

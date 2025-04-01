@@ -60,7 +60,7 @@ export default function Ecosystem() {
               </a>
             </h3>
 
-            <p className={cx('ecosystem__column-subtitle')}>
+            {/* <p className={cx('ecosystem__column-subtitle')}>
               Высокая степень
               <br className={cx('ecosystem__small-br')} /> автоматизации:
               <br className={cx('ecosystem__small-br')} /> вы тратите
@@ -68,7 +68,7 @@ export default function Ecosystem() {
               <br className={cx('ecosystem__small-br')} /> на начисления в 4
               раза
               <br className={cx('ecosystem__small-br')} /> меньше времени.
-            </p>
+            </p> */}
 
             <div
               className={cx(
@@ -152,11 +152,11 @@ export default function Ecosystem() {
               </a>
             </h3>
 
-            <p className={cx('ecosystem__column-subtitle')}>
+            {/* <p className={cx('ecosystem__column-subtitle')}>
               Обработка заявок жителей, автоматизация{' '}
               <br className={cx('ecosystem__mobile-br')} />
               рутинных задач, контроль работы исполнителей.
-            </p>
+            </p> */}
             <div
               className={cx(
                 'ecosystem__graph-container',
@@ -246,7 +246,7 @@ export default function Ecosystem() {
                 <br className={cx('ecosystem__desktop-br')} /> для жителей
               </a>
             </h3>
-            <p
+            {/* <p
               className={cx(
                 'ecosystem__column-subtitle',
                 'ecosystem__column-subtitle_last'
@@ -256,7 +256,7 @@ export default function Ecosystem() {
               <br className={cx('ecosystem__mobile-br')} />
               <br className={cx('ecosystem__small-br')} />и взаимодействуйте{' '}
               <br className={cx('ecosystem__small-br')} />с жителями в онлайн.
-            </p>
+            </p> */}
             <div
               className={cx(
                 'ecosystem__graph-container',
