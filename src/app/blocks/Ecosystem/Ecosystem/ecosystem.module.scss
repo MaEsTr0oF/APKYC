@@ -315,7 +315,7 @@
       display: inline-flex;
       justify-content: center;
       align-items: center;
-      background: linear-gradient(to bottom, rgb(0, 80, 200, 1), rgb(0, 57, 144, 1));
+      background: linear-gradient(to bottom, rgba(0, 80, 200, 1), rgba(0, 57, 144, 1));
       color: white;
       font-weight: 500;
       text-decoration: none;
@@ -324,10 +324,10 @@
       min-width: 250px;
       white-space: nowrap;
       transition: background 0.3s ease;
-      font-family: 'OnestRegular', Arial, sans-serif;
-      line-height: 120%;
+      font: $onestH11;
+      line-height: 110%;
       font-size: 18px;
-      letter-spacing: 0.1em;
+      font-feature-settings: "ss02";
       
       &:hover {
         background: linear-gradient(to bottom, darken(rgb(0, 80, 200, 1), 5%), darken(rgb(0, 57, 144, 1), 5%));
@@ -335,7 +335,8 @@
     }
     
     span {
-      font-family: 'OnestRegular', Arial, sans-serif;
+		font: $onestH10;
+      font-feature-settings: "ss02";
       color: $oceanBlue;
       line-height: 22px;
       font-size: 18px;
@@ -402,7 +403,7 @@
     &__column-text {
       span {
         font-size: 24px;
-        font-family: 'Involve', sans-serif;
+         
         font-weight: 500;
         letter-spacing: 0;
         line-height: 130%;
@@ -410,7 +411,6 @@
     }
   }
 }
-
 @media screen and (max-width: 1440px) {
   .ecosystem {
     max-width: 1240px;
@@ -488,19 +488,19 @@
 
     &__column-text {
       padding: 15px;
-      height: 220px;
+      // height: 220px;
       
       span {
         font-size: 24px;
         line-height: 130%;
-        font-family: 'Involve', sans-serif;
+         
         font-weight: 500;
         letter-spacing: 0;
       }
       
       a {
         font-size: 16px;
-        font-family: 'OnestRegular', Arial, sans-serif;
+         
         font-weight: 400;
         letter-spacing: 0;
       }
@@ -510,6 +510,36 @@
       span {
         font-size: 14px;
         line-height: 20px;
+      }
+    }
+	 &:nth-child(1) {
+      .ecosystem__column-text {
+        span {
+          font-size: 22px;
+        }
+        a {
+          font-size: 16px;
+        }
+      }
+    }
+	 &:nth-child(2) {
+      .ecosystem__column-text {
+        span {
+          font-size: 22px;
+        }
+        a {
+          font-size: 16px;
+        }
+      }
+    }
+	 &:nth-child(3) {
+      .ecosystem__column-text {
+        span {
+          font-size: 22px;
+        }
+        a {
+          font-size: 16px;
+        }
       }
     }
   }
@@ -581,19 +611,19 @@
 
     &__column-text {
       padding: 15px;
-      height: 230px;
+      // height: 230px;
       
       span {
         font-size: 22px;
         line-height: 130%;
-        font-family: 'Involve', sans-serif;
+         
         font-weight: 500;
         letter-spacing: 0;
       }
       
       a {
         font-size: 16px;
-        font-family: 'OnestRegular', Arial, sans-serif;
+         
         font-weight: 400;
         letter-spacing: 0;
       }
@@ -703,11 +733,11 @@
       margin-top: 20px;
       grid-column: 1 / span 2;
       grid-row: 4;
-      height: auto;
+      // height: auto;
       
       span {
         font-size: 24px;
-        font-family: 'Involve', sans-serif;
+         
         font-weight: 500;
         line-height: 130%;
         letter-spacing: 0;
@@ -715,7 +745,7 @@
       
       a {
         font-size: 16px;
-        font-family: 'OnestRegular', Arial, sans-serif;
+         
         font-weight: 400;
         letter-spacing: 0;
       }
@@ -865,12 +895,12 @@
     &__column-text {
       padding: 15px 12px;
       margin-top: 15px;
-      height: 150px;
+      // height: 150px;
       
       span {
         font-size: 18px;
         line-height: 130%;
-        font-family: 'Involve', sans-serif;
+         
         font-weight: 500;
         letter-spacing: 0;
       }
@@ -879,7 +909,7 @@
         align-self: flex-end;
         margin-top: 5px;
         font-size: 14px;
-        font-family: 'OnestRegular', Arial, sans-serif;
+         
         font-weight: 400;
         letter-spacing: 0;
       }
@@ -892,7 +922,7 @@
     &__column-text {
       padding: 15px 12px;
       margin-top: 15px;
-      height: 150px;
+      // height: 150px;
       
       span {
         font-size: 18px;
@@ -1026,19 +1056,19 @@
     &__column-text {
       padding: 12px 10px;
       gap: 12px;
-      height: 140px;
+      // height: 140px;
       
       span {
         font-size: 16px;
         line-height: 130%;
-        font-family: 'Involve', sans-serif;
+         
         font-weight: 500;
         letter-spacing: 0;
       }
       
       a {
         font-size: 12px;
-        font-family: 'OnestRegular', Arial, sans-serif;
+         
         font-weight: 400;
         letter-spacing: 0;
       }
@@ -1068,22 +1098,52 @@
     }
     
     &__column-text {
-      height: 180px;
+      // height: 180px;
       padding: 15px;
-      
+      font:$involveH2_1;
       span {
         font-size: 19px;
         line-height: 130%;
-        font-family: 'Involve', sans-serif;
-        font-weight: 500;
+        font:$involveH2_1;
+      //   font-weight: 500;
         letter-spacing: 0;
       }
       
       a {
         font-size: 15px;
-        font-family: 'OnestRegular', Arial, sans-serif;
+         
         font-weight: 400;
         letter-spacing: 0;
+      }
+    }
+	 &:nth-child(1) {
+      .ecosystem__column-text {
+        span {
+          font-size: 22px;
+        }
+        a {
+          font-size: 16px;
+        }
+      }
+    }
+	 &:nth-child(2) {
+      .ecosystem__column-text {
+        span {
+          font-size: 22px;
+        }
+        a {
+          font-size: 16px;
+        }
+      }
+    }
+	 &:nth-child(3) {
+      .ecosystem__column-text {
+        span {
+          font-size: 22px;
+        }
+        a {
+          font-size: 16px;
+        }
       }
     }
   }
