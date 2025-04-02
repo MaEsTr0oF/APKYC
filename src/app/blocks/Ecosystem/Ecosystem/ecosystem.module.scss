@@ -62,74 +62,92 @@
     
     &:nth-child(1) {
       .ecosystem__column-text {
-			background-color: rgba(246, 231, 228, 1);
-			z-index: -1;
-      //   border-left: 3px solid $billing;
-		  
+        background-color: rgba(246, 231, 228, 1);
+        z-index: -1;
+        
         span {
-			font-family: $involveH16;
-			
-			opacity: 1;
+			font: $involveH10_1;
+          font-weight: 500;
+          opacity: 1;
           color: $billing;
-			 line-height: 130%;
-      	font-size: 28px;
-
+          line-height: 130%;
+          font-size: 28px;
+          letter-spacing: 0;
+          -webkit-font-smoothing: antialiased;
+          text-rendering: optimizeLegibility;
         }
-		  a {
-			font-family: $onestH10;
-			color:rgba(210, 87, 36, 1);
-			text-decoration: underline;
-			text-underline-offset: 3px;
-			text-decoration-skip-ink: none;
-			font-weight: 400;
-		  }
+        
+        a {
+          font: $onestH16;
+          font-size: 18px;
+          color: $billing;
+          text-decoration: underline;
+          text-underline-offset: 3px;
+          text-decoration-skip-ink: none;
+          font-weight: 400;
+          letter-spacing: 0;
+        }
       }
     }
     
     &:nth-child(2) {
       .ecosystem__column-text {
-      //   border-left: 3px solid $crm;
-		background-color:rgba(239, 227, 249, 1);
-		z-index: -1;
+        background-color: rgba(239, 227, 249, 1);
+        z-index: -1;
+        
         span {
+			font: $involveH10_1;
+			font-weight: 500;
 			opacity: 1;
-          color: $crm;
-			 line-height: 130%;
-      	font-size: 28px;
-			font-family: $involveH16;
+			color: $crm;
+			line-height: 130%;
+			font-size: 28px;
+			letter-spacing: 0;
+			-webkit-font-smoothing: antialiased;
+			text-rendering: optimizeLegibility;
+         
         }
-			a {
-				color:rgba(87, 28, 115, 1);
-				text-decoration: underline;
-				text-underline-offset: 3px;
-				text-decoration-skip-ink: none;
-				font-family: $onestH10;
-				font-weight: 400;
-			}
+        
+        a {
+          color: rgba(87, 28, 115, 1);
+          text-decoration: underline;
+          text-underline-offset: 3px;
+          text-decoration-skip-ink: none;
+          font: $onestH16;
+          font-size: 18px;
+          font-weight: 400;
+          letter-spacing: 0;
+        }
       }
     }
     
     &:nth-child(3) {
       .ecosystem__column-text {
-      //   border-left: 3px solid $kvartplataBlue;
-		background-color:rgba(224, 247, 236, 0.5);
-		z-index: -1;
+        background-color: rgba(224, 247, 236, 0.5);
+        z-index: -1;
+        
         span {
-          color: $kvartplataBlue;
+			font: $involveH10_1;
+			font-weight: 500;
 			opacity: 1;
+			color: $kvartplataBlue;
 			line-height: 130%;
-      	font-size: 28px;
-			font-family: $involveH16;
-			
+			font-size: 28px;
+			letter-spacing: 0;
+			-webkit-font-smoothing: antialiased;
+			text-rendering: optimizeLegibility;
         }
-		  a {
-			color:rgba(28, 39, 80, 1);
-			text-decoration: underline;
-			text-underline-offset: 3px;
-			text-decoration-skip-ink: none;
-			font-family: $onestH10;
-			font-weight: 400;
-		  }
+        
+        a {
+          color: rgba(28, 39, 80, 1);
+          text-decoration: underline;
+          text-underline-offset: 3px;
+          text-decoration-skip-ink: none;
+          font: $onestH16;
+          font-size: 18px;
+          font-weight: 400;
+          letter-spacing: 0;
+        }
       }
     }
   }
@@ -189,20 +207,19 @@
   }
 
   &__column-text {
-	height: 100%;
-	margin-top: 44px;
+    height: 100%;
+    margin-top: 44px;
     display: flex;
     flex-direction: column;
     gap: 18px;
     justify-content: space-between;
     align-items: start;
-    padding: 22px 30px;
+    padding: 18px 28px 18px 30px;
     background-color: rgba(241, 245, 249, 0.5);
-    
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
     transition: all 0.3s ease;
     border: 1px solid transparent;
-    
+    font: $involveH10_1;
     &:hover {
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
       transform: translateY(-2px);
@@ -210,39 +227,24 @@
     }
     
     span {
-      @include onestFont($onestH7);
-      line-height: 140%;
-      font-size: 30px;
+      font: $involveH10_1;
+      line-height: 130%;
+      font-size: 28px;
+      font-weight: 500;
+      letter-spacing: 0;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
     }
     
     a {
-		font-family: $onestH10;
-      font-weight: 500;
+      font: $onestH16;
+      font-weight: 400;
       transition: all 0.3s ease;
       position: relative;
       text-decoration: underline;
       font-size: 18px;
+      letter-spacing: 0;
     }
-  }
-
-  &__column-text-billings, 
-  &__column-text-crm, 
-  &__column-text-kvartplata {
-    color: inherit;
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
-  }
-  
-  &__column-text-billings {
-    color: $billing !important;
-  }
-  
-  &__column-text-crm {
-    color: $crm !important;
-  }
-  
-  &__column-text-kvartplata {
-    color: $kvartplataBlue !important;
   }
 
   &__graph-container {
@@ -299,7 +301,7 @@
 
   &__footer-container {
     width: 100%;
-    padding: 20px 30px;
+    padding: 0;
     border-radius: 8px;
     margin-top: 50px;
   }
@@ -322,22 +324,23 @@
       min-width: 250px;
       white-space: nowrap;
       transition: background 0.3s ease;
-      font-family: $onestH11;
-		line-height: 120%;
-		font-size: 18px;
-		letter-spacing: 0.1em;
+      font-family: 'OnestRegular', Arial, sans-serif;
+      line-height: 120%;
+      font-size: 18px;
+      letter-spacing: 0.1em;
+      
       &:hover {
         background: linear-gradient(to bottom, darken(rgb(0, 80, 200, 1), 5%), darken(rgb(0, 57, 144, 1), 5%));
       }
     }
     
     span {
-      @include onestFont($onestH7);
+      font-family: 'OnestRegular', Arial, sans-serif;
       color: $oceanBlue;
       line-height: 22px;
       font-size: 18px;
-		font-weight: 400;
-		max-width: 680px;
+      font-weight: 400;
+      max-width: 680px;
     }
   }
 }
@@ -399,6 +402,10 @@
     &__column-text {
       span {
         font-size: 24px;
+        font-family: 'Involve', sans-serif;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 130%;
       }
     }
   }
@@ -485,12 +492,17 @@
       
       span {
         font-size: 24px;
-        line-height: 20px;
+        line-height: 130%;
+        font-family: 'Involve', sans-serif;
+        font-weight: 500;
+        letter-spacing: 0;
       }
       
-      &__column-text-billings, &__column-text-crm, &__column-text-kvartplata {
+      a {
         font-size: 16px;
-        line-height: 1.4;
+        font-family: 'OnestRegular', Arial, sans-serif;
+        font-weight: 400;
+        letter-spacing: 0;
       }
     }
 
@@ -573,12 +585,22 @@
       
       span {
         font-size: 22px;
-        line-height: 18px;
+        line-height: 130%;
+        font-family: 'Involve', sans-serif;
+        font-weight: 500;
+        letter-spacing: 0;
+      }
+      
+      a {
+        font-size: 16px;
+        font-family: 'OnestRegular', Arial, sans-serif;
+        font-weight: 400;
+        letter-spacing: 0;
       }
     }
 
     &__footer-container {
-      padding: 25px;
+      // padding: 25px;
     }
   }
 }
@@ -679,16 +701,23 @@
 
     &__column-text {
       margin-top: 20px;
-      height: 160px;
       grid-column: 1 / span 2;
-      grid-row:  4;
-		height: auto;
+      grid-row: 4;
+      height: auto;
+      
       span {
         font-size: 24px;
+        font-family: 'Involve', sans-serif;
+        font-weight: 500;
+        line-height: 130%;
+        letter-spacing: 0;
       }
       
-      &__column-text-billings, &__column-text-crm, &__column-text-kvartplata {
-        font-size: 14px;
+      a {
+        font-size: 16px;
+        font-family: 'OnestRegular', Arial, sans-serif;
+        font-weight: 400;
+        letter-spacing: 0;
       }
     }
     &__footer-container {
@@ -840,16 +869,19 @@
       
       span {
         font-size: 18px;
-        line-height: 24px;
+        line-height: 130%;
+        font-family: 'Involve', sans-serif;
+        font-weight: 500;
+        letter-spacing: 0;
       }
       
       a {
         align-self: flex-end;
         margin-top: 5px;
-      }
-      
-      &__column-text-billings, &__column-text-crm, &__column-text-kvartplata {
         font-size: 14px;
+        font-family: 'OnestRegular', Arial, sans-serif;
+        font-weight: 400;
+        letter-spacing: 0;
       }
     }
   }
@@ -864,18 +896,15 @@
       
       span {
         font-size: 18px;
-        line-height: 24px;
+        line-height: 130%;
+        letter-spacing: 0;
       }
       
       a {
         align-self: flex-end;
         margin-top: 5px;
         font-size: 13px;
-      }
-      
-      &__column-text-billings, &__column-text-crm, &__column-text-kvartplata {
-        font-size: 13px;
-        line-height: 1.3;
+        letter-spacing: 0;
       }
     }
     
@@ -888,7 +917,7 @@
     }
 
     &__footer-container {
-      padding: 20px 15px;
+      // padding: 20px 15px;
 		margin-top: 0px;
     }
     
@@ -1001,25 +1030,22 @@
       
       span {
         font-size: 16px;
-        line-height: 22px;
+        line-height: 130%;
+        font-family: 'Involve', sans-serif;
+        font-weight: 500;
+        letter-spacing: 0;
       }
       
       a {
         font-size: 12px;
-        
-        &:after {
-          font-size: 12px;
-        }
-      }
-      
-      &__column-text-billings, &__column-text-crm, &__column-text-kvartplata {
-        font-size: 12px;
-        line-height: 1.2;
+        font-family: 'OnestRegular', Arial, sans-serif;
+        font-weight: 400;
+        letter-spacing: 0;
       }
     }
 
     &__footer-container {
-      padding: 15px 12px;
+      // padding: 15px 12px;
     }
     
     &__footer-text {
@@ -1047,7 +1073,17 @@
       
       span {
         font-size: 19px;
-        line-height: 1.2;
+        line-height: 130%;
+        font-family: 'Involve', sans-serif;
+        font-weight: 500;
+        letter-spacing: 0;
+      }
+      
+      a {
+        font-size: 15px;
+        font-family: 'OnestRegular', Arial, sans-serif;
+        font-weight: 400;
+        letter-spacing: 0;
       }
     }
   }
