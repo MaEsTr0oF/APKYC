@@ -208,10 +208,10 @@
 
   &__column-text {
     height: 100%;
-    margin-top: 44px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 25px;
     justify-content: space-between;
     align-items: start;
     padding: 18px 28px 18px 30px;
@@ -223,7 +223,7 @@
     &:hover {
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
       transform: translateY(-2px);
-      border-color: rgba(30, 144, 255, 0.1);
+      border-color: rgba(84, 114, 145, 0.1);
     }
     
     span {
@@ -303,13 +303,13 @@
     width: 100%;
     padding: 0;
     border-radius: 8px;
-    margin-top: 50px;
+    margin-top: 37px;
   }
 
   &__footer-text {
     display: flex;
-    align-items: center;
-    gap: 30px;
+    align-items: end;
+    gap: 25px;
     
     a {
       display: inline-flex;
@@ -319,7 +319,7 @@
       color: white;
       font-weight: 500;
       text-decoration: none;
-      padding: 18px 124px;
+      padding: 19px 125.5px;
       border-radius: 49px;
       min-width: 250px;
       white-space: nowrap;
