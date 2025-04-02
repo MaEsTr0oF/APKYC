@@ -161,13 +161,13 @@
   }
 
   &__column-title {
-    margin: 39px 0;
+	margin: 34px 0 33px 0;
     @include onestFont($onestH23);
     line-height: 36px;
     text-transform: uppercase;
 
     &_kv {
-      margin: 35px 0 39px 0;
+      margin: 35px 0 42px 0;
     }
   }
 
@@ -376,7 +376,7 @@
     &__column-title {
       @include onestFont($onestH14);
       line-height: 26px;
-      margin: 34px 0 24px 0;
+      margin: 34px 0 33px 0;
     }
 
     &__column-subtitle {
