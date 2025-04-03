@@ -125,9 +125,9 @@ export default function Ecosystem() {
                 />
               </picture>
             </div>
-				<div className={cx('ecosystem__column-text')}>
-					<span>Удобная работа с начислениями и перерасчетами ЖКУ, выгрузкой показаний ИПУ и передачей данных в ГИС ЖК</span>
-					<a href="#">Подробнее</a>
+				<div className={cx('ecosystem__column-text', 'ecosystem__column-text_billing')}>
+					<span className={cx('ecosystem__column-description')}>Удобная работа с начислениями и перерасчетами ЖКУ, выгрузкой показаний ИПУ и передачей данных в ГИС ЖК</span>
+					<a href="#" className={cx('ecosystem__column-link-detail')}>Подробнее</a>
 				</div>
           </div>
           {/** АРКУС CRM */}
@@ -213,9 +213,9 @@ export default function Ecosystem() {
                 />
               </picture>
             </div>
-				<div className={cx('ecosystem__column-text')}>
-					<span>Простой контроль заявок жителей, аналитические отчеты, своевременное реагирование и закрытие обращений</span>
-					<a href="#">Подробнее</a>
+				<div className={cx('ecosystem__column-text', 'ecosystem__column-text_crm')}>
+					<span className={cx('ecosystem__column-description')}>Простой контроль заявок жителей, аналитические отчеты, своевременное реагирование и закрытие обращений</span>
+					<a href="#" className={cx('ecosystem__column-link-detail')}>Подробнее</a>
 				</div>
           </div>
           {/** Квартплата онлайн */}
@@ -300,10 +300,10 @@ export default function Ecosystem() {
                 />
               </picture>
             </div>
-				<div className={cx('ecosystem__column-text')}>
-					<span>Продажа собственных услуг, быстрая оплата квитанций, напоминания 
+				<div className={cx('ecosystem__column-text', 'ecosystem__column-text_kvartplata')}>
+					<span className={cx('ecosystem__column-description')}>Продажа собственных услуг, быстрая оплата квитанций, напоминания 
 					о задолженности и коммуникация с жителями </span>
-					<a href="#">Подробнее</a>
+					<a href="#" className={cx('ecosystem__column-link-detail')}>Подробнее</a>
 				</div>
           </div>
 			 
@@ -311,8 +311,8 @@ export default function Ecosystem() {
 
 		  <div className={cx('ecosystem__footer-container')}>
 			<div className={cx('ecosystem__footer-text')}>
-				<a href="#">Заказать демонстрацию</a>
-				<span>Автоматизируйте рутинные задачи, экономьте время, сокращайте издержки и повышайте прибыльность с АРКУС. Убедитесь в эффективности платформы!</span>
+				<button className={cx('ecosystem__footer-button')}>Заказать демонстрацию</button>
+				<span className={cx('ecosystem__footer-description')}>Автоматизируйте рутинные задачи, экономьте время, сокращайте издержки<br />и повышайте прибыльность с АРКУС. Убедитесь в эффективности платформы!</span>
 			</div>
 		  </div>
       </section>
