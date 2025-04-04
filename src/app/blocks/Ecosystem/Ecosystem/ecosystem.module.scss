@@ -63,7 +63,6 @@
     &:nth-child(1) {
       .ecosystem__column-text {
         background-color: rgba(246, 231, 228, 1);
-        z-index: -1;
         
         span {
 			font: $involveH10_1;
@@ -93,7 +92,6 @@
     &:nth-child(2) {
       .ecosystem__column-text {
         background-color: rgba(239, 227, 249, 1);
-        z-index: -1;
         
         span {
 			font: $involveH10_1;
@@ -124,7 +122,6 @@
     &:nth-child(3) {
       .ecosystem__column-text {
         background-color: rgba(224, 247, 236, 0.5);
-        z-index: -1;
         
         span {
 			font: $involveH10_1;
@@ -219,16 +216,15 @@
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
     transition: all 0.3s ease;
     border: 1px solid transparent;
+    position: relative;
     
     &:hover {
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
       transform: translateY(-2px);
       border-color: rgba(84, 114, 145, 0.1);
     }
-
     &_billing {
       background-color: rgba(246, 231, 228, 1);
-      z-index: -1;
       
       .ecosystem__column-description {
         color: $billing;
@@ -239,17 +235,12 @@
         
         &:hover {
           color: darken($billing, 10%);
-          
-          &:after {
-            color: darken($billing, 10%);
-          }
         }
       }
     }
     
     &_crm {
       background-color: rgba(239, 227, 249, 1);
-      z-index: -1;
       
       .ecosystem__column-description {
         color: $crm;
@@ -270,7 +261,6 @@
     
     &_kvartplata {
       background-color: rgba(224, 247, 236, 0.5);
-      z-index: -1;
       
       .ecosystem__column-description {
         color: $kvartplataBlue;
@@ -324,6 +314,8 @@
       opacity: 0.8;
       text-decoration: none;
       padding-right: 22px;
+      z-index: 2;
+      position: relative;
       
       &:after {
         opacity: 1;
