@@ -126,7 +126,7 @@ export default function Ecosystem() {
               </picture>
             </div>
 				<div className={cx('ecosystem__column-text', 'ecosystem__column-text_billing')}>
-					<span className={cx('ecosystem__column-description')}>Удобная работа с начислениями и перерасчетами ЖКУ, выгрузкой показаний ИПУ и передачей данных в ГИС ЖК</span>
+					<span className={cx('ecosystem__column-description')}>Удобная работа с начислениями и перерасчетами <br /> ЖКУ, выгрузкой показаний ИПУ и передачей <br /> данных в ГИС ЖК</span>
 					<a href="#" className={cx('ecosystem__column-link-detail')}>Подробнее</a>
 				</div>
           </div>
@@ -301,8 +301,8 @@ export default function Ecosystem() {
               </picture>
             </div>
 				<div className={cx('ecosystem__column-text', 'ecosystem__column-text_kvartplata')}>
-					<span className={cx('ecosystem__column-description')}>Продажа собственных услуг, быстрая оплата квитанций, напоминания 
-					о задолженности и коммуникация с жителями </span>
+					<span className={cx('ecosystem__column-description')}>Продажа собственных услуг, быстрая оплата <br /> квитанций, напоминания 
+					о задолженности <br /> и коммуникация с жителями </span>
 					<a href="#" className={cx('ecosystem__column-link-detail')}>Подробнее</a>
 				</div>
           </div>
