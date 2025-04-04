@@ -342,11 +342,11 @@
   }
 
   &__crm-graph {
-    width: 465px;
+	position: relative;
+    width: 100%;
     height: 238px;
-	 padding-top: 40px;
+	top: 20px;
   }
-
   &__kv-graph-container {
     gap: 51px;
   }
@@ -540,7 +540,7 @@
     &__crm-graph {
       width: 400px;
       height: 163px;
-		padding-top: 0;
+		top: 0;
     }
 
     &__kv-graph-container {
