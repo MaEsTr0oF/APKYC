@@ -358,7 +358,7 @@
   }
 
   &__crm-graph {
-    width: 465px;
+    width: 665px;
     height: 238px;
   }
 
@@ -418,7 +418,7 @@
     font: $onestH10;
     font-feature-settings: "ss02";
     color: $oceanBlue;
-    line-height: 28px;
+    line-height: 130%;
     max-width: 680px;
     text-align: center;
     display: flex;
@@ -472,7 +472,7 @@
     }
 
     &__crm-graph {
-      width: 465px;
+      width: 500px;
       height: 220px;
     }
 
@@ -628,7 +628,7 @@
     }
 
     &__billing-graph {
-      max-width: 203px;
+      max-width: 216px;
       max-height: 120px;
       margin: 0 0 0 49px;
     }
@@ -697,7 +697,7 @@
     }
     
     &__footer-description {
-      line-height: 26px;
+      line-height: 130%;
     }
 	 &__bottom-container{
 		gap:20px;
@@ -840,6 +840,9 @@
 	 br {
 		display: none;
 	 }
+	 &__mobile-br{
+		display: block !important;
+	 }
   }
 }
 
@@ -941,8 +944,8 @@
 	  }
  
 	  &__billing-graph {
-		 width: 131px;
-		 height: 112px;
+		 width: 167px;
+		 height: 114px;
 	  }
  
 	  &__crm-graph-container {
@@ -1002,7 +1005,7 @@
 		 width: 100%;
 		 max-width: 100%;
 		 padding: 0;
-		 height: 47px;
+		 height: 58px;
 		 display: flex;
 		 align-items: center;
 		 justify-content: center;
@@ -1096,8 +1099,8 @@
     }
 
     &__billing-graph {
-      width: 106px;
-      height: 93px;
+      width: 160px;
+      height: 98px;
     }
 
     &__crm-graph-container {
