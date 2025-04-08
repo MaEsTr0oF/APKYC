@@ -420,7 +420,7 @@
     color: $oceanBlue;
     line-height: 130%;
     max-width: 680px;
-    text-align: center;
+    text-align: start;
     display: flex;
     align-items: center;
     height: 100%;
@@ -1012,7 +1012,7 @@
 	 }
 	 
 	 &__footer-description {
-		 text-align: center;
+		 text-align: start;
 		 line-height: 22px;
 		 max-width: 100%;
 		 min-width:366px;
