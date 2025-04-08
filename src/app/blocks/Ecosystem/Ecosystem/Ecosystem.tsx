@@ -126,7 +126,7 @@ export default function Ecosystem() {
               </picture>
             </div>
 				<div className={cx('ecosystem__column-text', 'ecosystem__column-text_billing')}>
-					<span className={cx('ecosystem__column-description')}>Удобная работа с начислениями и перерасчетами <br /> ЖКУ, выгрузкой показаний ИПУ и передачей <br /> данных в ГИС ЖК</span>
+					<span className={cx('ecosystem__column-description')}>Удобная работа с начислениями и перерасчетами <br /> ЖКУ ,<br /> выгрузкой показаний ИПУ и передачей <br className={cx('ecosystem__column-text_billing_769')}/> данных в ГИС ЖК</span>
 					<a href="#" className={cx('ecosystem__column-link-detail')}>Подробнее</a>
 				</div>
           </div>
@@ -214,7 +214,7 @@ export default function Ecosystem() {
               </picture>
             </div>
 				<div className={cx('ecosystem__column-text', 'ecosystem__column-text_crm')}>
-					<span className={cx('ecosystem__column-description')}>Простой контроль заявок жителей, аналитические отчеты, своевременное реагирование и закрытие обращений</span>
+					<span className={cx('ecosystem__column-description')}>Простой контроль заявок <br className={cx('ecosystem__column-text_crm-1920')}/> жителей, аналитические <br className={cx('ecosystem__column-text_crm-1920')}/> отчеты, своевременное  <br className={cx('ecosystem__column-text_crm-1920')}/> реагирование и закрытие <br className={cx('ecosystem__column-text_crm-1920')}/> обращений</span>
 					<a href="#" className={cx('ecosystem__column-link-detail')}>Подробнее</a>
 				</div>
           </div>
@@ -301,8 +301,8 @@ export default function Ecosystem() {
               </picture>
             </div>
 				<div className={cx('ecosystem__column-text', 'ecosystem__column-text_kvartplata')}>
-					<span className={cx('ecosystem__column-description')}>Продажа собственных услуг, быстрая оплата <br /> квитанций, напоминания 
-					о задолженности <br /> и коммуникация с жителями </span>
+					<span className={cx('ecosystem__column-description')}>Продажа собственных <br className={cx('ecosystem__column-text_kvartplata-br-1280')}/> услуг, быстрая  оплата <br className={cx('ecosystem__column-text_kvartplata-br-769')}/> <br className={cx('ecosystem__column-text_kvartplata-br-1280')}/> квитанций, напоминания <br className={cx('ecosystem__column-text_kvartplata-br-1280','ecosystem__column-text_kvartplata-br-1920')}/>
+					о задолженности <br className={cx('ecosystem__column-text_kvartplata-br-769')}/> и <br className={cx('ecosystem__column-text_kvartplata-br-1280','ecosystem__column-text_kvartplata-br-1920')}/>коммуникация с жителями </span>
 					<a href="#" className={cx('ecosystem__column-link-detail')}>Подробнее</a>
 				</div>
           </div>
@@ -312,7 +312,7 @@ export default function Ecosystem() {
 		  <div className={cx('ecosystem__footer-container')}>
 			<div className={cx('ecosystem__footer-text')}>
 				<button className={cx('ecosystem__footer-button')}>Заказать демонстрацию</button>
-				<span className={cx('ecosystem__footer-description')}>Автоматизируйте рутинные задачи, экономьте время, сокращайте издержки<br />и повышайте прибыльность с АРКУС. Убедитесь в эффективности платформы!</span>
+				<span className={cx('ecosystem__footer-description')}>Автоматизируйте рутинные задачи, экономьте время, сокращайте издержки<br /> и повышайте прибыльность с АРКУС. Убедитесь в эффективности платформы!</span>
 			</div>
 		  </div>
       </section>

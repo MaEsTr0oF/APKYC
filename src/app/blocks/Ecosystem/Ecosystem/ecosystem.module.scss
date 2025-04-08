@@ -288,6 +288,9 @@
     letter-spacing: 0;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+	 br{
+		display: none;
+	 }
   }
   
   &__column-link-detail {
@@ -425,6 +428,12 @@
     align-items: center;
     height: 100%;
   }
+  &__column-text_kvartplata{
+	padding-right: 20px;
+  }
+  &__column-text_kvartplata-br-1920{
+	display: block !important;
+  }
 }
 
 @media screen and (max-width: 1920px) {
@@ -472,7 +481,8 @@
     }
 
     &__crm-graph {
-      width: 500px;
+		
+      width: 467px;
       height: 220px;
     }
 
@@ -483,7 +493,7 @@
 
     &__column-text {
       span {
-        font-size: 24px;
+        font-size: 28px !important;
          
         font-weight: 500;
         letter-spacing: 0;
@@ -494,15 +504,33 @@
     &__column-description {
       font-size: 24px;
     }
+	 &__footer-description{
+		font-size: 20px;
+		width: 760px;
+		max-width: 100%;
+		br{
+			display: none ;
+		}
+	 }
+	 &__column-text_crm-1920{
+		display: block !important;
+	 }
   }
 }
 @media screen and (max-width: 1440px) {
   .ecosystem {
     max-width: 1240px;
 
+	 &__column-text_kvartplata-br-1920{
+		display: none !important;
+	  }
     &__wrapper {
       gap: 40px;
     }
+
+	 &__column-text_crm-1920{
+		display: none;
+	 }
 
     &__title {
       font: $involveH14;
@@ -568,15 +596,27 @@
     }
 
     &__column-text {
-	  margin-top:6px;
+	  margin-top:25px;
       padding: 15px;
+		span{
+			font-size: 24px !important;
+		}
     }
     
     &__column-description {
       font-size: 24px;
       line-height: 130%;
+		br:nth-child(1){
+			display: none;
+		}
+		br:nth-child(3){
+			display: none;
+		}
     }
-    
+	 br{display: none;}
+    &__column-text_kvartplata-br-1280{
+		display: block !important;
+	 }
     &__column-link-detail {
       font-size: 14px !important;
     }
@@ -584,12 +624,14 @@
     &__footer-description {
       font: $onestH5;
 		line-height: 130%;
+		font-size: 18px;
     }
     
     &__footer-button {
       font: $onestH5;
       padding: 0 116px;
       height: 50px;
+		font-size: 16px !important;
     }
   }
 }
@@ -598,7 +640,9 @@
   .ecosystem {
     max-width: 984px;
     gap: 14px;
-
+	 &__column-text_kvartplata-br-1280{
+		display: none !important;
+	 }
     &__title {
       line-height: 46px;
       max-width: 561px;
@@ -670,6 +714,7 @@
     &__column-description {
       font-size: 22px;
       line-height: 130%;
+		
     }
     
     &__column-link-detail {
@@ -694,13 +739,30 @@
       display: flex;
       align-items: center;
       justify-content: center;
+		
     }
     
     &__footer-description {
       line-height: 130%;
+		font-size: 16px;
     }
 	 &__bottom-container{
 		gap:20px;
+	 }
+	 &__column-text_kvartplata-br-1920{
+		display: block !important;
+	 }
+	 &__column-text_crm-1920{
+		display: none !important;
+	 }
+	 &__column-text_billing_769{
+		display: block !important;
+	 }
+	 &__column-text_kvartplata-br-1920{
+		display: none !important;
+	 }
+	 &__column-text_kvartplata-br-769{
+		display: block !important;
 	 }
   }
 }
@@ -709,7 +771,9 @@
   .ecosystem {
     max-width: 728px;
     gap: 40px;
-
+	br{
+		display: none !important;
+	}
     &__top-container {
       display: flex;
       flex-direction: column;
@@ -803,11 +867,19 @@
       margin-top: 20px;
       grid-column: 1 / span 2;
       grid-row: 4;
+		
+		
     }
     
     &__column-description {
-      font-size: 24px;
+      
       line-height: 130%;
+		br:nth-child(1){
+			display: block;
+		}
+		br:nth-child(2){
+			display: none;
+		}
     }
     
     &__column-link-detail {
@@ -826,7 +898,7 @@
     &__footer-button {
       width: 100%;
       max-width: 300px;
-      padding: 0;
+      font-size: 14px !important;
       height: 47px;
       display: flex;
       align-items: center;
@@ -836,6 +908,7 @@
       align-items: start;
       text-align: start;
       line-height: 120%;
+		font-size: 14px;
     }
 	 br {
 		display: none;
@@ -1017,15 +1090,18 @@
 		 max-width: 100%;
 		 min-width:366px;
 	 }
-	 
+	 .ecosystem__column-text_kvartplata-br-1920{
+		display: block !important;
+	}
  }
  }
 
 @media screen and (max-width: 393px) {
+	
   .ecosystem {
     gap: 38px;
     padding-left: 12px;
-
+	 
     &__top-container {
       gap: 25px;
     }
@@ -1129,6 +1205,9 @@
     &__column-text {
       padding: 12px 10px;
       gap: 10px;
+		span{
+			font-size: 22px !important;
+		}
     }
     
     &__column-description {
@@ -1165,5 +1244,6 @@
       align-items: center;
       justify-content: center;
     }
+	 
   }
 }
