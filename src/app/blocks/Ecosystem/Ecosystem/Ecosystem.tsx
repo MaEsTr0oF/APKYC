@@ -154,8 +154,8 @@ export default function Ecosystem() {
 
             <p className={cx('ecosystem__column-subtitle')}>
               Обработка заявок жителей, автоматизация{' '}
-              <br className={cx('ecosystem__mobile-br')} />
-              рутинных задач, контроль работы исполнителей.
+              
+              рутинных <br className={cx('ecosystem__mobile-br')} /> задач, контроль работы исполнителей.
             </p>
             <div
               className={cx(
