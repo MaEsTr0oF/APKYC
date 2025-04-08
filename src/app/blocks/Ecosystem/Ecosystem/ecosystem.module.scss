@@ -482,7 +482,7 @@
 
     &__crm-graph {
 		
-      width: 467px;
+      width: 497px;
       height: 220px;
     }
 
@@ -1244,6 +1244,8 @@
       align-items: center;
       justify-content: center;
     }
-	 
+	 &__footer-description{
+		font-size: 18px;
+	 }
   }
 }
