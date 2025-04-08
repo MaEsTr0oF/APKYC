@@ -78,7 +78,7 @@
         
         a {
           font: $onestH16;
-          font-size: 18px;
+          font-size: 16px;
           color: $billing;
           text-decoration: underline;
           text-underline-offset: 3px;
@@ -578,7 +578,7 @@
     }
     
     &__column-link-detail {
-      font-size: 16px;
+      font-size: 14px !important;
     }
 
     &__footer-description {
@@ -978,7 +978,7 @@
 	  }
 	  
 	  &__column-link-detail {
-		 align-self: flex-end;
+		 
 		 margin-top: 5px;
 		 font-size: 14px;
 	  }
@@ -1015,6 +1015,7 @@
 		 text-align: center;
 		 line-height: 22px;
 		 max-width: 100%;
+		 min-width:366px;
 	 }
 	 
  }
@@ -1155,6 +1156,7 @@
       }
     }
     &__footer-button {
+		font-size: 16px;
       width: 100%;
       min-width: unset;
       padding: 0;
