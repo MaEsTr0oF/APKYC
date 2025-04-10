@@ -211,7 +211,7 @@
     gap: 23px;
     justify-content: space-between;
     align-items: start;
-    padding: 20px 10px 22px 28px;
+    padding: 20px 10px 22px 10px;
     background-color: rgba(241, 245, 249, 0.5);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
     transition: all 0.3s ease;
@@ -1042,10 +1042,14 @@
 	  &__column-text {
 		 padding: 15px 9px;
 		 margin-top: 15px;
+		 span{
+			font-size: 22px !important;
+		 }
+		 
 	  }
 	  
 	  &__column-description {
-		 font-size: 18px;
+		 
 		 line-height: 130%;
 	  }
 	  
