@@ -1052,7 +1052,7 @@
 	  &__column-link-detail {
 		 
 		 margin-top: 5px;
-		 font-size: 14px;
+		 font-size: 14px !important;
 	  }
 	 &__column-container {
 		 &:nth-child(1), &:nth-child(2), &:nth-child(3) {
@@ -1081,6 +1081,7 @@
 		 display: flex;
 		 align-items: center;
 		 justify-content: center;
+		 font-size: 16px !important;
 	 }
 	 
 	 &__footer-description {
@@ -1232,6 +1233,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+		  
       }
     }
     &__footer-button {
@@ -1243,6 +1245,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+		
     }
 	 &__footer-description{
 		font-size: 18px;
