@@ -23,15 +23,15 @@ export default function Ecosystem() {
             </span>
           </h2>
           <p className={cx('ecosystem__subtitle')}>
-            Цифровая система для управления МКД{' '}
+            Цифровая система для управления <br className={cx('ecosystem__subtitle-br')} /> МКД{' '}
             <br className={cx('ecosystem__desktop-br')} />в управляющих
-            компаниях и ТСЖ, ЖСК.
+            компаниях и <br className={cx('ecosystem__subtitle-br')} /> ТСЖ, ЖСК.
             <br className={cx('ecosystem__desktop-br')} /> Экономит{' '}
-            <span className={cx('ecosystem__subtitle_span')}>до 70%</span>{' '}
+            <span className={cx('ecosystem__subtitle_span')}>до 70%</span> <br className={cx('ecosystem__subtitle-br')} />{' '}
             рабочего времени,
-            <br className={cx('ecosystem__desktop-br')} /> сократит
+            <br className={cx('ecosystem__desktop-br')} /> сократит <br className={cx('ecosystem__subtitle-br')} />
             задолженность за ЖКУ{' '}
-            <span className={cx('ecosystem__subtitle_span')}>на 55%</span>{' '}
+            <span className={cx('ecosystem__subtitle_span')}>на 55%</span><br className={cx('ecosystem__subtitle-br')} />{' '}
             <br /> и увеличит прибыльность.
           </p>
         </div>

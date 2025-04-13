@@ -434,6 +434,9 @@
   &__column-text_kvartplata-br-1920{
 	display: block !important;
   }
+  &__subtitle-br{
+	display: none !important;
+  }
 }
 
 @media screen and (max-width: 1920px) {
@@ -613,7 +616,7 @@
 			display: none;
 		}
     }
-	 br{display: none;}
+	//  br{display: none;}
     &__column-text_kvartplata-br-1280{
 		display: block !important;
 	 }
@@ -864,7 +867,9 @@
       margin-top: 20px;
       grid-column: 1 / span 2;
       grid-row: 4;
-		
+		span{
+			font-size: 22px !important;
+		}
 		
     }
     
@@ -913,18 +918,30 @@
 	 &__mobile-br{
 		display: block !important;
 	 }
+	 &__column-text_kvartplata-br-769{
+		display: block !important;
+	 }
   }
 }
 
 @media screen and (max-width: 768px) {
+	
 	.ecosystem {
 	  gap: 52px;
 	  padding: 0 16px 90px 16px;
 	  margin: 0 auto;
 	  max-width: 393px;
-	  br{
-			display: none !important;
-		}
+	  
+	// Сначала скрываем все <br>
+	br{
+		display: none !important;
+	}
+
+	// Затем показываем только те, что в subtitle, с повышенной специфичностью
+	&__subtitle &__subtitle-br{
+		display: block !important;
+	}
+
 	  &__top-container {
 		 gap: 34px;
 	  }
@@ -934,12 +951,20 @@
 		 font-size: 22px;
 		 font-weight: 500;
 		 line-height: 29px;
+		 // br внутри title тоже показываем, если нужно
+		 br{
+			display: block !important; 
+		 }
 	  }
  
 	  &__subtitle {
 		 max-width: 361px;
 		 @include onestFont($onestH12);
 		 line-height: 26px;
+		 // Это правило можно убрать, так как __subtitle-br уже обрабатывается
+		 // br:nth-last-child(1){
+		 //	display: block !important;
+		 // }
 	  }
  
 	  &__bottom-container {
@@ -976,8 +1001,8 @@
 		 display: none;
 	  }
  
-	  &__small-br {
-		 display: block;
+	  &__column-subtitle &__small-br {
+		 display: block !important;
 	  }
  
 	  &__graph-container {
@@ -1089,8 +1114,15 @@
 		 max-width: 100%;
 		 min-width:366px;
 	 }
+	 
 	 .ecosystem__column-text_kvartplata-br-1920{
 		display: block !important;
+	}
+	&__column-text_kvartplata br:nth-last-child(2){
+		display: block !important;
+	}
+	&__column-text_kvartplata br:nth-last-child(1){
+		display: none !important;
 	}
  }
  }
@@ -1247,5 +1279,6 @@
 	 &__footer-description{
 		font-size: 18px;
 	 }
+	 
   }
 }
