@@ -252,7 +252,7 @@ export default function Ecosystem() {
                 'ecosystem__column-subtitle_last'
               )}
             >
-              Увеличьте собираемость платежей до 98%{' '}
+              Увеличьте <br className={cx('ecosystem__small-mobile-br')} /> собираемость <br className={cx('ecosystem__small-mobile-br')} /> платежей до 98%{' '}
               <br className={cx('ecosystem__mobile-br')} />
               <br className={cx('ecosystem__small-br')} />и взаимодействуйте{' '}
               <br className={cx('ecosystem__small-br')} />с жителями в онлайн.

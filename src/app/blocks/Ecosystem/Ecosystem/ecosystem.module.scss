@@ -437,6 +437,9 @@
   &__subtitle-br{
 	display: none !important;
   }
+  &__small-mobile-br{
+	display: none !important;
+  }
 }
 
 @media screen and (max-width: 1920px) {
@@ -1128,162 +1131,166 @@
  }
  }
 
-// @media screen and (max-width: 393px) {
+@media screen and (max-width: 393px) {
 	
-//   .ecosystem {
-//     gap: 38px;
-//     padding-left: 12px;
+  .ecosystem {
+    gap: 38px;
+    padding-left: 12px;
 	 
-//     &__top-container {
-//       gap: 25px;
-//     }
+    &__top-container {
+      gap: 25px;
+    }
 
-//     &__title {
-//       font: $onestH9_1;
-//       line-height: 130%;
-// 		font-size: 16px;
-//     }
+    &__title {
+      font: $onestH9_1;
+      line-height: 130%;
+		font-size: 16px;
+    }
 
-//     &__subtitle {
-//       @include onestFont($onestH7);
-//       line-height: 130%;
-// 		font-size: 16px;
-//     }
+    &__subtitle {
+      @include onestFont($onestH7);
+      line-height: 130%;
+		font-size: 16px;
+    }
 
-//     &__column-image {
-//       grid-column: 1 / 3;
-//       width: 111px;
+    &__column-image {
+      grid-column: 1 / 3;
+      width: 111px;
 
-//       &_kv {
-//         width: 153px;
-//         height: 26px;
-//         object-fit: contain
-//       }
-//     }
+      &_kv {
+        width: 153px;
+        height: 26px;
+        object-fit: contain
+      }
+    }
 
-//     &__column-title {
-//       @include onestFont($onestH9_1);
-//       line-height: 18px;
-//       margin: 20px 0 16px 0;
-// 		font-size: 14px;
+    &__column-title {
+      @include onestFont($onestH9_1);
+      line-height: 18px;
+      margin: 20px 0 16px 0;
+		font-size: 14px;
 		
-// 		text-decoration: none;
-// 		a{
-// 			text-decoration: none;
+		text-decoration: none;
+		a{
+			text-decoration: none;
 			
-// 			@include onestFont($onestH9_1);
-// 			font-size: 16px;
-// 			line-height: 100%;
-// 		}
-//     }
+			@include onestFont($onestH9_1);
+			font-size: 16px;
+			line-height: 100%;
+		}
+    }
 
-//     &__column-subtitle {
-//       @include onestFont($onestH7);
-//       line-height: 15px;
-// 		font-size: 16px;
-//     }
+    &__column-subtitle {
+      @include onestFont($onestH7);
+      line-height: 15px;
+		font-size: 16px;
+    }
 
-//     &__column-container {
-//       grid-template-columns: auto auto;
-//       grid-template-rows: 28px auto auto;
-//     }
+    &__column-container {
+      grid-template-columns: auto auto;
+      grid-template-rows: 28px auto auto;
+    }
 
-//     &__column-subtitle {
-//       max-width: 148px;
-// 		font:$onestH7;
-// 		font-size: 16px;
-// 		line-height: 130%;
-// 		font-feature-settings: "ss02";
-// 		min-width:186px;
-//     }
+    &__column-subtitle {
+      max-width: 148px;
+		font:$onestH7;
+		font-size: 12px;
+		line-height: 130%;
+		font-feature-settings: "ss02";
+		min-width:160px;
+    }
 
-//     &__graph-title {
-//       @include onestFont($onestH3);
-//       line-height: 13px;
-// 		font-size: 12px;
-// 		padding-right: 6px;
-//     }
+    &__graph-title {
+      @include onestFont($onestH3);
+      line-height: 13px;
+		font-size: 10px;
+		padding-right: 6px;
+    }
 
-//     &__billing-graph-container {
-//       gap: 29px;
-//     }
+    &__billing-graph-container {
+      gap: 29px;
+    }
 
-//     &__billing-graph {
-//       width: 160px;
-//       height: 98px;
-//     }
+    &__billing-graph {
+      width: 130px;
+      height: 80px;
+    }
 
-//     &__crm-graph-container {
-//       gap: 15px;
-//     }
+    &__crm-graph-container {
+      gap: 15px;
+    }
 
-//     &__crm-graph {
-//       width: 140px;
-//       height: 114px;
-//     }
+    &__crm-graph {
+      width: 139px;
+      height: 98px;
+    }
 
-//     &__kv-graph-container {
-//       gap: 17px;
-//     }
+    &__kv-graph-container {
+      gap: 17px;
+    }
 
-//     &__kv-graph {
-//       width: 140px;
-//       height: 88px;
-//     }
+    &__kv-graph {
+      width: 138px;
+      height: 98px;
+    }
 
-//     &__small-br {
-//       display: none;
-//     }
+    &__small-br {
+      display: none;
+    }
 
-//     &__column-text {
-//       padding: 12px 10px;
-//       gap: 10px;
-// 		span{
-// 			font-size: 22px !important;
-// 		}
-//     }
+    &__column-text {
+      padding: 12px 10px;
+      gap: 10px;
+		span{
+			font-size: 18px !important;
+		}
+		a{
+			font-size: 12px !important;
+		}
+    }
     
-//     &__column-description {
-//       font-size: 16px;
-//       line-height: 130%;
-//     }
+    &__column-description {
+      font-size: 16px;
+      line-height: 130%;
+    }
     
-//     &__column-link-detail {
-//       font-size: 12px;
-//     }
+    &__column-link-detail {
+      font-size: 12px;
+    }
 
-//     &__footer-container {
-//       // padding: 15px 12px;
-//     }
+    &__footer-container {
+      // padding: 15px 12px;
+    }
     
-//     &__footer-text {
-//       a {
-//         width: 100%;
-//         min-width: unset;
-// 		  padding: 0;
-//         height: 50px;
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
+    &__footer-text {
+      a {
+        width: 100%;
+        min-width: unset;
+		  padding: 0;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 		  
-//       }
-//     }
-//     &__footer-button {
-// 		font-size: 16px;
-//       width: 100%;
-//       min-width: unset;
-//       padding: 0;
-//       height: 58px;
-//       display: flex;
-//       align-items: center;
-//       justify-content: center;
+      }
+    }
+    &__footer-button {
+		font-size: 14px !important;
+      width: 290px;
+      min-width: unset;
+      padding: 0;
+      height: 46px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 		
-//     }
-// 	 &__footer-description{
-// 		font-size: 18px;
-// 	 }
-//   }
-// }
+    }
+	 &__footer-description{
+		font-size: 16px !important;
+		min-width: 292px;
+	 }
+  
+
     &__footer-text {
       a {
         width: 100%;
@@ -1295,19 +1302,8 @@
         justify-content: center;
       }
     }
-    &__footer-button {
-		font-size: 16px;
-      width: 100%;
-      min-width: unset;
-      padding: 0;
-      height: 58px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-	 &__footer-description{
-		font-size: 18px;
-	 }
-	 
+	 &__column-subtitle &__small-mobile-br{
+		display: block !important;
+	  }
   }
 }
