@@ -7,7 +7,7 @@ export default function Crm() {
 	const cx = classNames.bind(styles);
 
 	return (
-		<div className={cx('crm__wrapper')}>
+		<div id="crm-section" className={cx('crm__wrapper')}>
 			<Menu activeMenu="crm" />
 
 			<section className={cx('crm')}>

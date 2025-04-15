@@ -18,7 +18,7 @@ export default function Kvartplata() {
 	const cx = classNames.bind(styles);
 
 	return (
-		<div className={cx('kv__wrapper')}>
+		<div id="kvo-section" className={cx('kv__wrapper')}>
 			<Menu activeMenu="kvo" />
 
 			<section className={cx('kv')}>

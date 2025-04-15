@@ -4,8 +4,7 @@ import classNames from 'classnames/bind';
 import styles from '@/app/blocks/Ecosystem/Billing/billing.module.scss';
 import { useState } from 'react';
 import Menu from '../Menu/Menu';
-import BillingDetails from './BillingDetails';
-import { billingDetailsList } from './BillingDetails';
+import BillingDetails, { billingDetailsList } from './BillingDetails';
 import Image from 'next/image';
 import billingMobileGraphImage from '../../../../../public/images/ecosystemBlock/billing/billing393.svg';
 import dynamic from 'next/dynamic';
@@ -22,7 +21,7 @@ export default function Billing() {
 	};
 
 	return (
-		<div className={cx('billing__wrapper')}>
+		<div id="billing-section" className={cx('billing__wrapper')}>
 			<DynamicFormPopup
 				title={'Заказать расчет '}
 				titleSpan={'стоимости'}
@@ -37,6 +36,12 @@ export default function Billing() {
 			<Menu activeMenu="billing" />
 
 			<section className={cx('billing')}>
+				<h2 className={cx('billing__title')}>
+					Программа для расчета
+					<br />
+					<span className={cx('billing__title_span')}>квартплаты и ЖКУ</span>
+				</h2>
+
 				{/** Верхний блок */}
 				<div className={cx('billing__top')}>
 					<h2 className={cx('billing__title')}>
