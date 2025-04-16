@@ -402,7 +402,7 @@
     font: $onestH10;
     text-decoration: none;
     padding: 0 125.5px;
-    height: 59px;
+    height: 60px;
     border-radius: 49px;
     min-width: 250px;
     white-space: nowrap;
@@ -1150,6 +1150,7 @@
 
     &__title {
       font: 600 22px / 130% var(--involve);
+		font-size: 22px !important;
       line-height: 130%;
 		font-size: 16px;
     }
