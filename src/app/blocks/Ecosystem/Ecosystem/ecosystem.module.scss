@@ -432,13 +432,16 @@
 	padding-right: 20px;
   }
   &__column-text_kvartplata-br-1920{
-	display: block !important;
+	display: block;
   }
   &__subtitle-br{
-	display: none !important;
+	display: none;
   }
   &__small-mobile-br{
-	display: none !important;
+	display: none;
+  }
+  &__column-text_kvartplata br:nth-child(4){
+	display: block;
   }
 }
 
@@ -499,8 +502,7 @@
 
     &__column-text {
       span {
-        font-size: 28px !important;
-         
+        font-size: 28px;
         font-weight: 500;
         letter-spacing: 0;
         line-height: 130%;
@@ -515,11 +517,11 @@
 		width: 760px;
 		max-width: 100%;
 		br{
-			display: none ;
+			display: none;
 		}
 	 }
 	 &__column-text_crm-1920{
-		display: block !important;
+		display: block;
 	 }
   }
 }
@@ -527,8 +529,8 @@
   .ecosystem {
     max-width: 1240px;
 
-	 &__column-text_kvartplata-br-1920{
-		display: none !important;
+	 .ecosystem__column-text_kvartplata-br-1920{
+		display: none;
 	  }
     &__wrapper {
       gap: 40px;
@@ -600,31 +602,26 @@
       height: 163px;
       margin: 0 0 0 68px;
     }
-
-    &__column-text {
-	  margin-top:30px;
-      padding: 15px;
-		span{
-			font-size: 24px !important;
-		}
-    }
     
-    &__column-description {
-      font-size: 24px;
+    .ecosystem__column-text_kvartplata &__column-description {
+      
       line-height: 130%;
 		br:nth-child(1){
-			display: none;
+			display: block;
+		}
+		br:nth-child(2){
+			display: block;
 		}
 		br:nth-child(3){
 			display: none;
 		}
     }
 	//  br{display: none;}
-    &__column-text_kvartplata-br-1280{
-		display: block !important;
+    .ecosystem__column-text_kvartplata-br-1280{
+		display: block;
 	 }
-    &__column-link-detail {
-      font-size: 14px !important;
+    .ecosystem &__column-link-detail {
+      font-size: 14px;
     }
 
     &__footer-description {
@@ -636,13 +633,22 @@
 		}
     }
     
-    &__footer-button {
+    .ecosystem &__footer-button {
       font: $onestH5;
       padding: 0 116px;
       height: 50px;
-		font-size: 16px !important;
+		font-size: 16px;
 		width: 400px;
     }
+  }
+  
+  .ecosystem .ecosystem__column-container .ecosystem__column-text {
+	margin-top:30px;
+	 padding: 15px;
+	 font-size: 24px;
+	 span{
+		 font-size: 24px;
+	 }
   }
 }
 
@@ -650,8 +656,8 @@
   .ecosystem {
     max-width: 984px;
     gap: 14px;
-	 &__column-text_kvartplata-br-1280{
-		display: none !important;
+	 .ecosystem__column-text_kvartplata-br-1280{
+		display: none;
 	 }
     &__title {
       line-height: 46px;
@@ -743,13 +749,13 @@
 				justify-content: center;
 			}
 		}
-    &__footer-button {
+    .ecosystem &__footer-button {
       padding: 0;
       height: 47px;
       display: flex;
       align-items: center;
       justify-content: center;
-		font-size: 14px !important;
+		font-size: 14px;
 		width: 375px;
     }
     
@@ -760,21 +766,33 @@
 	 &__bottom-container{
 		gap:20px;
 	 }
-	 &__column-text_kvartplata-br-1920{
-		display: block !important;
+	 &__column-text_kvartplata br:nth-child(5){
+		display: none;
 	 }
-	 &__column-text_crm-1920{
-		display: none !important;
+	 
+
+	 .ecosystem__column-text_kvartplata-br-1920{
+		display: block;
 	 }
-	 &__column-text_billing_769{
-		display: block !important;
+	 .ecosystem__column-text_crm-1920{
+		display: none;
 	 }
-	 &__column-text_kvartplata-br-1920{
-		display: none !important;
+	 .ecosystem__column-text_billing_769{
+		display: block;
 	 }
-	 &__column-text_kvartplata-br-769{
-		display: block !important;
+	 .ecosystem .ecosystem__column-text_kvartplata-br-1920{
+		display: none;
 	 }
+	 .ecosystem__column-text_kvartplata-br-769{
+		display: block;
+	 }
+	 .ecosystem__column-container .ecosystem__column-text .ecosystem__column-description {
+		font-size: 22px;
+		 span{
+			font-size: 22px;
+		 }
+		 line-height: 130%;
+	  }
   }
 }
 
@@ -821,7 +839,7 @@
       grid-column: 1 / 2;
       grid-row: 1 / 2;
     }
-
+	 
     &__column-title {
       grid-column: 1 / 2;
       grid-row: 2 / 3;
@@ -879,7 +897,7 @@
       grid-column: 1 / span 2;
       grid-row: 4;
 		span{
-			font-size: 24px !important;
+			font-size: 24px;
 		}
 		
     }
@@ -888,9 +906,12 @@
       
       line-height: 130%;
 		br:nth-child(1){
-			display: block;
+			display: none;
 		}
 		br:nth-child(2){
+			display: none;
+		}
+		br:nth-child(3){
 			display: none;
 		}
     }
@@ -908,9 +929,9 @@
       align-items: center;
       gap: 15px;
     }
-    &__footer-button {
+    .ecosystem &__footer-button {
       min-width: 332px;
-      font-size: 14px !important;
+      font-size: 14px;
       height: 47px;
       display: flex;
       align-items: center;
@@ -925,11 +946,26 @@
 	 br {
 		display: none;
 	 }
-	 &__mobile-br{
-		display: block !important;
+	 .ecosystem &__mobile-br{
+		display: block;
 	 }
-	 &__column-text_kvartplata-br-769{
-		display: block !important;
+	 .ecosystem &__column-text_kvartplata-br-769{
+		display: block;
+	 }
+	 &__column-text_crm br:nth-child(1){
+		display: none;
+	 }
+	 .ecosystem  &__column-text_kvartplata br:nth-child(2){
+		display: none;
+	 }
+	 .ecosystem  &__column-text_kvartplata br:nth-child(5){
+		display: block;
+	 }
+	 .ecosystem  &__column-text_kvartplata br:nth-child(6){
+		display: none;
+	 }
+	 .ecosystem  &__column-text_kvartplata br:nth-child(1){
+		display: none;
 	 }
   }
 }
@@ -944,12 +980,12 @@
 	  
 	// Сначала скрываем все <br>
 	br{
-		display: none !important;
+		display: none;
 	}
 
 	// Затем показываем только те, что в subtitle, с повышенной специфичностью
 	&__subtitle &__subtitle-br{
-		display: block !important;
+		display: block;
 	}
 
 	  &__top-container {
@@ -963,7 +999,7 @@
 		 line-height: 29px;
 		 // br внутри title тоже показываем, если нужно
 		 br{
-			display: block !important; 
+			display: block; 
 		 }
 	  }
  
@@ -971,10 +1007,9 @@
 		 max-width: 361px;
 		 @include onestFont($onestH12);
 		 line-height: 26px;
-		 // Это правило можно убрать, так как __subtitle-br уже обрабатывается
-		 // br:nth-last-child(1){
-		 //	display: block !important;
-		 // }
+		 br:nth-last-child(1){
+		 	display: none;
+		 }
 	  }
  
 	  &__bottom-container {
@@ -1007,12 +1042,12 @@
 		 max-width: 186px;
 	  }
  
-	  &__mobile-br {
+	  .ecosystem &__mobile-br {
 		 display: none;
 	  }
  
-	  &__column-subtitle &__small-br {
-		 display: block !important;
+	  .ecosystem &__column-subtitle &__small-br {
+		 display: block;
 	  }
  
 	  &__graph-container {
@@ -1079,20 +1114,16 @@
 		 margin-top: 15px;
 		 gap:0;
 		 span{
-			font-size: 22px !important;
+			font-size: 22px;
 		 }
 		 
 	  }
 	  
-	  &__column-description {
-		 
-		 line-height: 130%;
-	  }
 	  
-	  &__column-link-detail {
-		 
+	  
+	  .ecosystem &__column-link-detail {
 		 margin-top: 5px;
-		 font-size: 14px !important;
+		 font-size: 14px;
 	  }
 	 &__column-container {
 		 &:nth-child(1), &:nth-child(2), &:nth-child(3) {
@@ -1113,7 +1144,7 @@
 		 gap: 15px;
 	 }
 	 
-	 &__footer-button {
+	 .ecosystem &__footer-button {
 		 width: 100%;
 		 max-width: 100%;
 		 padding: 0;
@@ -1121,19 +1152,19 @@
 		 display: flex;
 		 align-items: center;
 		 justify-content: center;
-		 font-size: 16px !important;
+		 font-size: 16px;
 	 }
 	 
-	 &__footer-description {
+	 .ecosystem &__footer-description {
 		 text-align: start;
 		 line-height: 22px;
 		 max-width: 100%;
 		 min-width:366px;
-		 font-size: 18px !important;
+		 font-size: 18px;
 	 }
 	 
-	 .ecosystem__column-text_kvartplata-br-1920{
-		display: block !important;
+	 .ecosystem .ecosystem__column-text_kvartplata-br-1920{
+		display: block;
 	}
  }
  }
@@ -1148,9 +1179,9 @@
       gap: 25px;
     }
 
-    &__title {
+    .ecosystem &__title {
       font: 600 22px / 130% var(--involve);
-		font-size: 22px !important;
+		font-size: 22px;
       line-height: 130%;
 		font-size: 16px;
     }
@@ -1250,10 +1281,10 @@
       padding: 12px 10px;
       gap: 10px;
 		span{
-			font-size: 18px !important;
+			font-size: 18px;
 		}
 		a{
-			font-size: 12px !important;
+			font-size: 12px;
 		}
     }
     
@@ -1282,8 +1313,8 @@
 		  
       }
     }
-    &__footer-button {
-		font-size: 14px !important;
+    .ecosystem &__footer-button {
+		font-size: 14px;
       width: 290px;
       min-width: unset;
       padding: 0;
@@ -1293,11 +1324,17 @@
       justify-content: center;
 		
     }
-	 &__footer-description{
-		font-size: 16px !important;
+	 .ecosystem &__footer-description{
+		font-size: 16px;
 		min-width: 292px;
 	 }
-  
+	 .ecosystem__column-container .ecosystem__column-text .ecosystem__column-description {
+		font-size: 18px;
+		 span{
+			font-size: 18px;
+		 }
+		 line-height: 130%;
+	  }
 
     &__footer-text {
       a {
@@ -1310,8 +1347,8 @@
         justify-content: center;
       }
     }
-	 &__column-subtitle &__small-mobile-br{
-		display: block !important;
+	 .ecosystem .ecosystem &__column-subtitle &__small-mobile-br{
+		display: block;
 	  }
   }
 }
